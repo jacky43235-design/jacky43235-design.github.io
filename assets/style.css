@@ -15,4 +15,17 @@
   background-repeat: no-repeat !important;
   background-color: #080808 !important;
   min-height: 85vh;
+}/* 只保留背景 LOGO，隱藏中央 LOGO */
+.hero-logo {
+  display: none !important;
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+}
+
+.hero {
+  background: #050505 url("logo.png") center center / contain no-repeat !important;
+  min-height: 90vh;
 }
